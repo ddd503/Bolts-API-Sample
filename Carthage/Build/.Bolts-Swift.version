@@ -1,0 +1,9 @@
+{
+  "commitish" : "1.4.0",
+  "iOS" : [
+    {
+      "name" : "BoltsSwift",
+      "hash" : "9e34a7d45f0a5e09ecd94ffc7fc70f4c23fc7209f6ef9ea600ea7281b1706659"
+    }
+  ]
+}
