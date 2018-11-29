@@ -16,6 +16,8 @@
 		4573F89B21AF042B00893494 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4573F89A21AF042B00893494 /* Alamofire.framework */; };
 		4573F89D21AF043F00893494 /* BoltsSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4573F89C21AF043F00893494 /* BoltsSwift.framework */; };
 		4573F89F21AF044D00893494 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4573F89E21AF044D00893494 /* Kingfisher.framework */; };
+		4573F8A321B050C400893494 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573F8A221B050C400893494 /* APIClient.swift */; };
+		4573F8A521B0510D00893494 /* RequestOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4573F8A421B0510D00893494 /* RequestOption.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,8 @@
 		4573F89A21AF042B00893494 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		4573F89C21AF043F00893494 /* BoltsSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BoltsSwift.framework; path = Carthage/Build/iOS/BoltsSwift.framework; sourceTree = "<group>"; };
 		4573F89E21AF044D00893494 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		4573F8A221B050C400893494 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		4573F8A421B0510D00893494 /* RequestOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestOption.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 		4573F87821AF020600893494 /* Bolts-API-Sample */ = {
 			isa = PBXGroup;
 			children = (
+				4573F8A121B050B400893494 /* API */,
 				4573F87921AF020600893494 /* AppDelegate.swift */,
 				4573F87B21AF020600893494 /* ViewController.swift */,
 				4573F87D21AF020600893494 /* Main.storyboard */,
@@ -114,6 +119,15 @@
 				4573F89A21AF042B00893494 /* Alamofire.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4573F8A121B050B400893494 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				4573F8A221B050C400893494 /* APIClient.swift */,
+				4573F8A421B0510D00893494 /* RequestOption.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,8 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4573F8A521B0510D00893494 /* RequestOption.swift in Sources */,
 				4573F87C21AF020600893494 /* ViewController.swift in Sources */,
 				4573F87A21AF020600893494 /* AppDelegate.swift in Sources */,
+				4573F8A321B050C400893494 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
